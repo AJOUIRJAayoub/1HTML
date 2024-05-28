@@ -1,0 +1,500 @@
+body {
+    background-color: rgb(61, 61, 61);
+    margin: 0 auto;
+}
+
+
+
+
+/* LOGO SUPINFO EN A GAUCHE */
+
+#LOGO {
+    
+    width: 100px;
+    height: 100px;
+}
+
+/* FIN */
+
+#logomenu{
+    border-radius: 10px;
+}
+
+
+
+/* CSS Bouton Connexion PC */
+
+
+#BtnConnexion {
+    position: fixed;
+    padding: 15px 40px;
+    margin-top: 30px;
+    right:  20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(13, 255, 194)
+}
+
+
+
+#BtnConnexion:hover {
+    opacity: 0.5;
+  }
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation PC */
+
+.menu {
+    position: fixed;
+    top: 7rem;
+    margin-top: -65px;
+    margin-left: 125px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.menu a:hover {
+    color: rgb(13, 255, 194);
+    text-decoration: none;
+}
+
+#btn {
+    display: none;
+    
+}
+
+#topbar label {
+    visibility: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation MOBILE RENDU INVISIBLE POUR LES ECRANS SUPERIEUR A 650PX DE LARGEUR */
+
+.menumobile {
+    display: none;
+}
+
+/* FIN */
+
+
+
+
+
+/* CSS BARRE DE NAVIGATION PC ET MOBILE */
+
+#btn:checked~.menumobile {
+    display: block;
+}
+
+
+#topbar {
+    
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+}
+
+#topbar>p {
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 550;
+    color: rgb(8, 216, 231);
+    font-family: 'Roboto', sans-serif;
+}
+
+#topbar>img {
+    position: fixed;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* FIN */
+
+
+/* PARTIE FORMUILAIRE */
+
+*{
+    padding: 0;
+    margin: 0;  
+    text-decoration: none;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+
+
+body{
+    font-family: Arial Narrow, sans-serif;
+    background: rgb(61, 61, 61);
+}
+
+
+
+nav{
+    background: rgb(61, 61, 61);
+    height: 80px;
+    width: 100%;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+label.logo{
+    
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: bold;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+
+#Image1siteSupinfo {
+
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+
+
+
+
+@media (max-width: 952px){
+
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+
+}
+
+
+
+@media (max-width: 858px){
+    
+    .checkbtn{
+        display: block;
+        margin-right: 20px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(61, 61, 61);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 1s;
+
+    }
+
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    
+}
+
+
+.TXT1{
+    position: sticky;
+    width: 100%;
+    padding: 30px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG1CERCLE{
+    width: 100px;
+    height: 150px;
+    background: url(./IMG/Image7siteSupinfo.jpg);
+    background-size: 100% 100%;
+    float: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.TXT2{
+    position: sticky;
+    width: 100%;
+    padding: 30px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG2CERCLE{
+    width: 100px;
+    height: 150px;
+    background: url(./IMG/Image8siteSupinfo.jpg);
+    background-size: 100% 100%;
+    float: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.TXT3{
+    position: sticky;
+    width: 100%;
+    padding: 30px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG3CERCLE{
+    width: 100px;
+    height: 150px;
+    background: url(./IMG/Image9siteSupinfo.jpg);
+    background-size: 100% 100%;
+    float: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.TXT4{
+    position: sticky;
+    width: 100%;
+    padding: 30px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG4CERCLE{
+    width: 100px;
+    height: 150px;
+    background: url(./IMG/Image10siteSupinfo.jpg);
+    background-size: 100% 100%;
+    float: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.TXT5{
+    position: sticky;
+    width: 100%;
+    padding: 30px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG5CERCLE{
+    width: 100px;
+    height: 150px;
+    background: url(./IMG/Image11siteSupinfo.jpg);
+    background-size: 100% 100%;
+    float: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+
+#TITRECAMPUS{
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 50px;
+}
+
+
+
+section#contact .contenaire{
+    max-width: 800px;
+    margin: 0px auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(61, 61, 61);
+    padding: 5px 5px 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    box-shadow: 0px 10px 50px -10px;
+}
+
+section#contact .contenaire .titre{
+    text-align: center;
+    color:white;
+    margin-bottom: -10px;
+    
+}
+
+section#contact .contenaire .titre h6{
+
+    font-size: 1em;
+}
+section#contact .contenaire .titre h3{
+
+    font-size: 2.2em;
+}
+
+section#contact .contenaire form {
+    border-radius: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+section#contact .contenaire form input{
+    width: 47%;
+}
+section#contact .contenaire form input:hover,
+section#contact .contenaire form textarea:hover{
+
+    border-bottom:5px solid #3D2683;
+
+}
+
+section#contact .contenaire form input,
+section#contact .contenaire form textarea{
+
+    margin: 10px 0;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #535359;
+    transition: 0.2s;
+    border-radius: 8%;
+    
+}
+
+section#contact .contenaire form textarea{
+
+    width: 100%;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+    resize: none;
+}
+section#contact .contenaire form button{
+
+    width: 90px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3D2683 ;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 250px;
+    outline: none;
+    
+}
+/* FIN */

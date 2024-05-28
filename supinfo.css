@@ -1,0 +1,438 @@
+body {
+    background-color: rgb(61, 61, 61);
+    margin: 0 auto;
+}
+
+
+
+
+/* LOGO SUPINFO EN A GAUCHE */
+
+#LOGO {
+    
+    width: 100px;
+    height: 100px;
+}
+
+/* FIN */
+
+#logomenu{
+    border-radius: 10px;
+}
+
+
+
+/* CSS Bouton Connexion PC */
+
+
+#BtnConnexion {
+    position: fixed;
+    padding: 15px 40px;
+    margin-top: 30px;
+    right:  20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(13, 255, 194)
+}
+
+
+
+#BtnConnexion:hover {
+    opacity: 0.5;
+  }
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation PC */
+
+.menu {
+    position: fixed;
+    top: 7rem;
+    margin-top: -65px;
+    margin-left: 125px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.menu a:hover {
+    color: rgb(13, 255, 194);
+    text-decoration: none;
+}
+
+#btn {
+    display: none;
+    
+}
+
+#topbar label {
+    visibility: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation MOBILE RENDU INVISIBLE POUR LES ECRANS SUPERIEUR A 650PX DE LARGEUR */
+
+.menumobile {
+    display: none;
+}
+
+/* FIN */
+
+
+
+
+
+/* CSS BARRE DE NAVIGATION PC ET MOBILE */
+
+#btn:checked~.menumobile {
+    display: block;
+}
+
+
+#topbar {
+    
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+}
+
+#topbar>p {
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 550;
+    color: rgb(8, 216, 231);
+    font-family: 'Roboto', sans-serif;
+}
+
+#topbar>img {
+    position: fixed;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* FIN */
+
+
+
+/* CSS Image En Dessous De La Barre De Navigation */
+
+#Image1siteSupinfo {
+
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding-top: 80px;
+}
+    
+.text-image1{
+    margin-top: -200px;
+    font-size: 25px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    
+#Text-Image1 {
+    width: 380px;
+    margin-left: 20px;
+}
+
+#EnsavoirplusImg1 {
+    padding: 15px 30px;
+    border-radius: 9px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+
+        
+    background-color: rgb(13, 255, 194);
+}
+
+        
+#EnsavoirplusImg1:hover {
+    opacity: 0.5;
+}
+
+
+#TP1{
+    margin-top: 70px;
+    margin-left: 30px;
+    font-size: 35px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#PP1{
+
+    padding: 0px 50px 0px 40px;
+    font-size: 25px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.TXT1{
+    position: sticky;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG1CERCLE{
+    width: 200px;
+    height: 200px;
+    background: url(./IMG/Image2siteSupinfo.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+
+.TXT2{
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG2CERCLE{
+    width: 200px;
+    height: 200px;
+    background: url(./IMG/Image3siteSupinfo.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+}
+
+/* FIN */
+
+
+
+
+
+
+
+/* CSS POUR MOBILE AVEC UNE LARGEUR DE 650PX  */
+
+@media only screen and (max-width: 650px) {
+    
+    label {
+        
+        display: block;
+        cursor: pointer;
+        visibility: visible !important;
+    }
+
+    .menumobile {
+        
+        text-align: center;
+        width: 106%;
+        display: none;
+        background-color: var(--purple);
+        position: sticky;
+        z-index: 1;
+        top: 7rem;
+        background-color: rgb(13, 255, 194)
+    }
+
+    .menumobile a {
+        
+        display: block;
+        color: var(--white);
+        border-bottom: 1px solid var(--white);
+        padding: 25px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #btn:checked+.menumobile {
+        display: block;
+    }
+
+    label img {
+        
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        position: absolute;
+        right: 0;
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    #BtnConnexion {
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    .Image1accueil{
+        width: 400px;
+        height: auto;
+    }
+
+    #Image1siteSupinfo {
+
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+        
+    .text-image1{
+        margin-top: -200px;
+        font-size: 25px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+        
+    #Text-Image1 {
+        width: 380px;
+        margin-left: 20px;
+    }
+    
+    #EnsavoirplusImg1 {
+        padding: 15px 30px;
+        border-radius: 9px;
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+            
+        background-color: rgba(49, 136, 132, 0.712);
+    }
+            
+    #EnsavoirplusImg1:hover {
+        opacity: 0.5;
+    }
+    
+    #Image1siteSupinfo {
+
+        
+        width: 105%;
+        height: 250px;
+        overflow: hidden;
+        padding-top: 20px;
+        
+    }
+    
+    #topbar>img {
+        position: initial;
+        
+    }
+
+    #TP1{
+        margin-top: 70px;
+        margin-left: 30px;
+        font-size: 25px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    
+    #PP1{
+    
+        padding: 0px 50px 0px 40px;
+        font-size: 15px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    
+    .TXT1{
+        position: sticky;
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 10px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .IMG1CERCLE{
+        width: 100px;
+        height: 100px;
+        background: url(./IMG/Image2siteSupinfo.jpg);
+        background-size: 100% 100%;
+        border-radius: 50%;
+        float: left;
+        margin: 20px;
+        margin-top: 10px;
+    }
+    
+    
+    .TXT2{
+        position: sticky;
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 12px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .TXT2 h1{
+        font-size: 20px;
+    }
+
+    .IMG2CERCLE{
+        width: 100px;
+        height: 100px;
+        background: url(./IMG/Image3siteSupinfo.jpg);
+        background-size: 100% 100%;
+        border-radius: 50%;
+        float: left;
+        margin: 20px;
+    }
+
+
+}
+
+/* FIN CSS MOBILE */
+
+
+
+

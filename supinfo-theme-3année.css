@@ -1,0 +1,391 @@
+body {
+    background-color: rgb(61, 61, 61);
+    margin: 0 auto;
+}
+
+
+
+
+/* LOGO SUPINFO EN A GAUCHE */
+
+#LOGO {
+    
+    width: 100px;
+    height: 100px;
+}
+
+/* FIN */
+
+#logomenu{
+    border-radius: 10px;
+}
+
+
+
+/* CSS Bouton Connexion PC */
+
+
+#BtnConnexion {
+    position: fixed;
+    padding: 15px 40px;
+    margin-top: 30px;
+    right:  20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(13, 255, 194)
+}
+
+
+
+#BtnConnexion:hover {
+    opacity: 0.5;
+  }
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation PC */
+
+.menu {
+    position: fixed;
+    top: 7rem;
+    margin-top: -65px;
+    margin-left: 125px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.menu a:hover {
+    color: rgb(13, 255, 194);
+    text-decoration: none;
+}
+
+#btn {
+    display: none;
+    
+}
+
+#topbar label {
+    visibility: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation MOBILE RENDU INVISIBLE POUR LES ECRANS SUPERIEUR A 650PX DE LARGEUR */
+
+.menumobile {
+    display: none;
+}
+
+/* FIN */
+
+
+
+
+
+/* CSS BARRE DE NAVIGATION PC ET MOBILE */
+
+#btn:checked~.menumobile {
+    display: block;
+}
+
+
+#topbar {
+    
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+}
+
+#topbar>p {
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 550;
+    color: rgb(8, 216, 231);
+    font-family: 'Roboto', sans-serif;
+}
+
+#topbar>img {
+    position: fixed;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 100px;
+    height: 100px;
+}
+
+#Image1siteSupinfo {
+
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+
+/* FIN */
+
+
+/* CSS POUR MOBILE AVEC UNE LARGEUR DE 650PX  */
+
+@media only screen and (max-width: 650px) {
+    
+    label {
+        
+        display: block;
+        cursor: pointer;
+        visibility: visible !important;
+    }
+
+    .menumobile {
+        
+        text-align: center;
+        width: 106%;
+        display: none;
+        background-color: var(--purple);
+        position: sticky;
+        z-index: 1;
+        top: 7rem;
+        background-color: rgb(13, 255, 194);
+    }
+
+    .menumobile a {
+        
+        display: block;
+        color: var(--white);
+        border-bottom: 1px solid var(--white);
+        padding: 25px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #btn:checked+.menumobile {
+        display: block;
+    }
+
+    label img {
+        
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        position: absolute;
+        right: 0;
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    #BtnConnexion {
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    .Image1accueil{
+        width: 400px;
+        height: auto;
+    }
+
+    
+        
+    .text-image1{
+        margin-top: -200px;
+        font-size: 25px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+        
+    #Text-Image1 {
+        width: 380px;
+        margin-left: 20px;
+    }
+    
+    #EnsavoirplusImg1 {
+        padding: 15px 30px;
+        border-radius: 9px;
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+            
+        background-color: rgba(49, 136, 132, 0.712);
+    }
+            
+    #EnsavoirplusImg1:hover {
+        opacity: 0.5;
+    }
+    
+
+}
+
+/* FIN CSS MOBILE */
+
+
+
+/* <!-- Menu  GAUCHE DE LA PAGE --> */
+
+
+.menuBOE{
+
+    margin-left: 40px;
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+   
+}
+
+
+
+.BOE1{
+    padding: 30px 20px; 
+    background: rgb(13, 255, 194);
+    border-radius: 10px; 
+    color: black; 
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.BOE1:hover{
+    background: red; 
+}
+
+.BOE2{
+    padding: 30px 20px; 
+    background: rgb(13, 255, 194);
+    border-radius: 10px; 
+    color: black; 
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.BOE2:hover{
+    background: red; 
+}
+
+.BOE3{
+    padding: 30px 20px; 
+    background: rgb(13, 255, 194);
+    border-radius: 10px; 
+    color: black; 
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.BOE3:hover{
+    background: red; 
+}
+
+.BOE4{
+    padding: 30px 20px; 
+    background: rgb(13, 255, 194);
+    border-radius: 10px; 
+    color: black; 
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.BOE4:hover{
+    background: red; 
+}
+
+.BOE5{
+    padding: 30px 20px; 
+    background: rgb(13, 255, 194);
+    border-radius: 10px; 
+    color: black; 
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.BOE5:hover{
+    background: red; 
+}
+/* FIN */
+
+
+
+
+
+
+/* CSS RESTE DE LA PAGE */
+
+.TXT1PROG{
+    position: sticky;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IMG1PROG{
+    width: 400px;
+    height: 300px;
+    background: url(./IMG/Image16siteSupinfo.jpg);
+    background-size: 100% 100%;
+    float: left;
+    margin: 20px;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: white;
+    
+    
+    
+  }
+  th{
+    border: 3px solid rgb(0, 225, 255);
+    padding: 10px;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+
+/* FIN */

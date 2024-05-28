@@ -1,0 +1,203 @@
+body {
+    background-color: rgb(61, 61, 61);
+    margin: 0 auto;
+}
+
+
+
+
+/* LOGO SUPINFO EN A GAUCHE */
+
+#LOGO {
+    
+    width: 100px;
+    height: 100px;
+}
+
+/* FIN */
+
+#logomenu{
+    border-radius: 10px;
+}
+
+
+
+/* CSS Bouton Connexion PC */
+
+
+#BtnConnexion {
+    position: fixed;
+    padding: 15px 40px;
+    margin-top: 30px;
+    right:  20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(13, 255, 194)
+}
+
+
+
+#BtnConnexion:hover {
+    opacity: 0.5;
+  }
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation PC */
+
+.menu {
+    position: fixed;
+    top: 7rem;
+    margin-top: -65px;
+    margin-left: 125px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.menu a:hover {
+    color: rgb(13, 255, 194);
+    text-decoration: none;
+}
+
+#btn {
+    display: none;
+    
+}
+
+#topbar label {
+    visibility: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+/* FIN */
+
+
+
+
+/* CSS Barre de navigation MOBILE RENDU INVISIBLE POUR LES ECRANS SUPERIEUR A 650PX DE LARGEUR */
+
+.menumobile {
+    display: none;
+}
+
+/* FIN */
+
+
+
+
+
+/* CSS BARRE DE NAVIGATION PC ET MOBILE */
+
+#btn:checked~.menumobile {
+    display: block;
+}
+
+
+#topbar {
+    
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+}
+
+#topbar>p {
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 550;
+    color: rgb(8, 216, 231);
+    font-family: 'Roboto', sans-serif;
+}
+
+#topbar>img {
+    position: fixed;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* FIN */
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+    color: #264383;
+}
+
+.Trombinoscope {
+    display: flex;
+    width: 75%;
+    max-width: 1300px;
+    margin: 50px auto 0;
+    margin-top: 90px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(61, 61, 61);
+    height: 600px;
+}
+
+.item {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: white;
+    margin-top: 3px;
+}
+
+*{
+    padding: 0;
+    margin: 0;  
+    text-decoration: none;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+
+
+body{
+    font-family: Arial Narrow, sans-serif;
+    background: rgb(61, 61, 61);
+}
+
+.TITRE{
+    margin-top: 130px;
+    font-size: 50px;
+    color: white;
+}
+
